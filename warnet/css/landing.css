@@ -1,0 +1,165 @@
+/* NetZone landing page (halaman depan sebelum login) */
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.lp{
+  --lp-x:clamp(20px,6vw,80px);
+  --lp-deep:#190f66;
+  flex:1;
+}
+.lp-wrap{max-width:1120px;margin:0 auto;padding:0 var(--lp-x)}
+
+/* ---------- buttons ---------- */
+.lp-btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:52px;padding:0 28px;border-radius:100px;
+  font:600 15px/1 'Poppins',sans-serif;border:1.5px solid transparent;
+  cursor:pointer;transition:transform .15s,background .2s,border-color .2s;
+}
+.lp-btn:hover{transform:translateY(-2px)}
+.lp-btn:focus-visible,.lp a:focus-visible{outline:3px solid #fff;outline-offset:3px;box-shadow:0 0 0 6px var(--primary)}
+.lp-btn--yellow{background:var(--yellow);color:var(--yellow-ink)}
+.lp-btn--ghost{border-color:rgba(255,255,255,.55);color:#fff;background:rgba(255,255,255,.06)}
+.lp-btn--ghost:hover{background:rgba(255,255,255,.16)}
+.lp-btn--solid{background:linear-gradient(135deg,#8b72f8,#6d5be8);color:#fff}
+.lp-btn--sm{min-height:42px;padding:0 20px;font-size:14px}
+
+/* ---------- hero ---------- */
+.lp-hero{
+  position:relative;color:#fff;
+  min-height:min(88vh,740px);
+  display:flex;flex-direction:column;
+  background:
+    linear-gradient(90deg,rgba(20,10,84,.88) 0%,rgba(20,10,84,.58) 36%,rgba(20,10,84,0) 62%),
+    url("../assets/background.PNG") right center / cover no-repeat,
+    var(--lp-deep);
+}
+.lp-nav{
+  height:92px;padding:0 var(--lp-x);
+  display:flex;align-items:center;justify-content:space-between;gap:20px;
+}
+.lp-nav__brand img{display:block;width:150px;height:auto}
+.lp-nav__links{display:flex;gap:28px;font-size:14px}
+.lp-nav__links a{color:rgba(255,255,255,.82)}
+.lp-nav__links a:hover{color:#fff}
+.lp-nav__auth{display:flex;align-items:center;gap:18px}
+.lp-nav__login{font-size:14px;font-weight:600}
+
+.lp-hero__copy{
+  flex:1;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;
+  padding:24px var(--lp-x) 72px;max-width:calc(680px + var(--lp-x) * 2);
+}
+.lp-hero h1{
+  font-family:'Orelega One',serif;font-weight:400;
+  font-size:clamp(40px,5.4vw,78px);line-height:1.04;letter-spacing:-.01em;
+  text-wrap:balance;
+}
+.lp-hero__lead{margin-top:22px;max-width:30em;font-size:clamp(16px,1.5vw,19px);color:rgba(255,255,255,.88)}
+.lp-cta{margin-top:34px;display:flex;flex-wrap:wrap;gap:14px}
+.lp-hero__note{margin-top:26px;font-size:14px;color:rgba(255,255,255,.72);max-width:32em}
+
+/* ---------- sections ---------- */
+.lp-section{padding:88px 0}
+.lp-section--tint{background:rgba(25,31,51,.55);border-block:1px solid var(--line)}
+.lp-section--last{padding-top:24px}
+.lp-title{
+  font-family:'Orelega One',serif;font-weight:400;
+  font-size:clamp(28px,3.4vw,42px);line-height:1.1;color:var(--ink);
+  margin-bottom:40px;
+}
+.lp-title--category{
+  width:fit-content;
+  max-width:100%;
+  font-family:'Poppins',sans-serif;
+  font-weight:700;
+  letter-spacing:-.045em;
+  color:#f4f2ff;
+  text-wrap:balance;
+}
+.lp-title--category::after{
+  content:"";
+  display:block;
+  width:72px;
+  height:4px;
+  margin-top:16px;
+  border-radius:99px;
+  background:linear-gradient(90deg,#a78bfa,#67e8f9);
+  box-shadow:0 0 18px rgba(103,232,249,.28);
+}
+
+/* steps: a real sequence, so the numbers carry meaning */
+.lp-steps{list-style:none;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:32px}
+.lp-steps li{border-top:2px solid var(--primary);padding-top:20px}
+.lp-steps__no{
+  font-family:'Orelega One',serif;font-size:34px;line-height:1;color:var(--primary);display:block;margin-bottom:14px;
+}
+.lp-steps h3{font-size:17px;margin-bottom:8px}
+.lp-steps p{color:var(--muted);font-size:14px;max-width:24em}
+
+/* tiers */
+.lp-tiers{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.lp-tier{
+  padding:36px;border-radius:28px;border:1px solid var(--line);background:var(--card);
+  display:flex;flex-direction:column;align-items:flex-start;gap:10px;
+}
+.lp-tier h3{font-family:'Orelega One',serif;font-weight:400;font-size:32px}
+.lp-tier p{color:var(--muted);max-width:26em}
+.lp-tier .lp-tier__price{
+  margin-top:14px;color:var(--ink);font-family:'Orelega One',serif;font-size:40px;line-height:1.1;
+}
+.lp-tier__price span{font:500 15px 'Poppins',sans-serif;color:var(--muted);margin-left:6px}
+.lp-tier__meta{font-size:14px}
+.lp-tier .lp-btn{margin-top:14px}
+.lp-tier--vip{
+  background:linear-gradient(160deg,#3b2d96,#221866);border-color:rgba(171,151,255,.28);color:#fff;
+}
+.lp-tier--vip p,.lp-tier--vip .lp-tier__price span{color:rgba(255,255,255,.78)}
+.lp-tier--vip .lp-tier__price{color:var(--yellow)}
+
+/* place */
+.lp-place{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.lp-place .lp-title{margin-bottom:16px}
+.lp-place__text{color:var(--muted);max-width:28em}
+.lp-place__facts{display:grid;gap:0;border-top:1px solid var(--line)}
+.lp-place__facts div{padding:18px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:120px 1fr;gap:16px}
+.lp-place__facts dt{color:var(--muted);font-size:14px}
+.lp-place__facts dd{margin:0;font-weight:600}
+
+/* final call to action, same art as the in-app banner */
+.lp-final{
+  border-radius:32px;padding:56px clamp(24px,5vw,64px);color:#fff;
+  background:
+    linear-gradient(105deg,rgba(24,12,82,.7) 0%,rgba(39,24,117,.35) 60%,rgba(22,14,66,.2) 100%),
+    url("assets/background.PNG") right 45% / cover no-repeat,var(--lp-deep);
+}
+.lp-final h2{font-family:'Orelega One',serif;font-weight:400;font-size:clamp(28px,3.6vw,46px);line-height:1.1}
+.lp-final p{margin:12px 0 28px;max-width:26em;color:rgba(255,255,255,.88)}
+
+/* ---------- responsive ---------- */
+@media (max-width:980px){
+  .lp-steps{grid-template-columns:repeat(2,1fr)}
+  .lp-nav__links{display:none}
+}
+@media (max-width:720px){
+  .lp-hero{
+    min-height:0;
+    background:
+      linear-gradient(180deg,var(--lp-deep) 0%,var(--lp-deep) 45%,rgba(25,15,102,0) 75%),
+      url("assets/background.PNG") right bottom / auto 300px no-repeat,
+      var(--lp-deep);
+  }
+  .lp-nav{height:76px}
+  .lp-nav__brand img{width:120px}
+  .lp-hero__copy{padding:12px var(--lp-x) 330px}
+  .lp-section{padding:64px 0}
+  .lp-tiers,.lp-place{grid-template-columns:1fr}
+  .lp-place{gap:24px}
+  .lp-tier{padding:28px}
+}
+@media (max-width:520px){
+  .lp-steps{grid-template-columns:1fr}
+  .lp-btn{width:100%}
+  .lp-nav__auth .lp-btn{width:auto}
+  .lp-place__facts div{grid-template-columns:1fr;gap:2px}
+}
+@media (prefers-reduced-motion:reduce){.lp-btn{transition:none}.lp-btn:hover{transform:none}}

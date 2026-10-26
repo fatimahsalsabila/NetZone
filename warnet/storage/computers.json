@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "name": "Regular PC 01",
+        "type": "regular",
+        "price": 7000,
+        "status": "aktif"
+    },
+    {
+        "id": 2,
+        "name": "Regular PC 02",
+        "type": "regular",
+        "price": 7000,
+        "status": "aktif"
+    },
+    {
+        "id": 3,
+        "name": "Regular PC 03",
+        "type": "regular",
+        "price": 7000,
+        "status": "aktif"
+    },
+    {
+        "id": 4,
+        "name": "Regular PC 04",
+        "type": "regular",
+        "price": 7000,
+        "status": "aktif"
+    },
+    {
+        "id": 5,
+        "name": "Regular PC 05",
+        "type": "regular",
+        "price": 7000,
+        "status": "aktif"
+    },
+    {
+        "id": 6,
+        "name": "Regular PC 06",
+        "type": "regular",
+        "price": 7000,
+        "status": "aktif"
+    },
+    {
+        "id": 7,
+        "name": "Regular PC 07",
+        "type": "regular",
+        "price": 7000,
+        "status": "aktif"
+    },
+    {
+        "id": 8,
+        "name": "Regular PC 08",
+        "type": "regular",
+        "price": 7000,
+        "status": "aktif"
+    },
+    {
+        "id": 9,
+        "name": "VIP PC 01",
+        "type": "vip",
+        "price": 12000,
+        "status": "aktif"
+    },
+    {
+        "id": 10,
+        "name": "VIP PC 02",
+        "type": "vip",
+        "price": 12000,
+        "status": "aktif"
+    },
+    {
+        "id": 11,
+        "name": "VIP PC 03",
+        "type": "vip",
+        "price": 12000,
+        "status": "aktif"
+    },
+    {
+        "id": 12,
+        "name": "VIP PC 04",
+        "type": "vip",
+        "price": 12000,
+        "status": "aktif"
+    }
+]

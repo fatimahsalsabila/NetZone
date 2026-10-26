@@ -1,0 +1,37 @@
+[
+    {
+        "id": "644be1498f7915e9",
+        "email": "mel@gmail.com",
+        "phone": "0821231223",
+        "username": "epay00",
+        "password": "$2y$10$a1hNnd4DDhcOU42G.p90o.WhOI68WdXw75F1FANYRNyKA6L0ubvqe",
+        "created_at": "2026-10-19T07:18:33+00:00"
+    },
+    {
+        "id": "aa5b2888b88f1978",
+        "email": "mellvaanasta1@gmail.com",
+        "phone": "081988223",
+        "username": "evanih",
+        "password": "$2y$10$5/W5ikE5zEVPRPTl9h0.FeKKmosnuyd6DVZ3nqHig.YrNDYyq2ttO",
+        "created_at": "2026-10-19T09:33:54+00:00"
+    },
+    {
+        "id": "309058a596a20145",
+        "email": "mellva@gmail.com",
+        "phone": "0891236767",
+        "username": "mellva",
+        "password": "$2y$10$leSs1ExF6F3Fvg7EknvaCeRhdZyY5y3znckDApC3L5qUMkEqZ5eIC",
+        "role": "admin",
+        "created_at": "2026-10-21T14:14:59+07:00"
+    },
+    {
+        "id": "a7df456132a451b2",
+        "email": "fsalsatary@gmail.com",
+        "phone": "081212865357",
+        "username": "fatimah",
+        "role": "admin",
+        "password": "$2y$10$Yimc.9O27m3Q10KfKD5pxObs3VFWYbWDt4pbUYa11O7NdECmuLT5S",
+        "created_at": "2026-10-22T03:18:58+07:00",
+        "profile_photo": "ee54c18bf34a24aa08058b6f080633fe.jpg"
+    }
+]
